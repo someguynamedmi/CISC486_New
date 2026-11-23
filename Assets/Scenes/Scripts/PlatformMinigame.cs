@@ -86,7 +86,7 @@ public class PlatformMinigame : Minigame
             RectTransform playerRect = player.GetComponent<RectTransform>();
             playerRect.anchoredPosition += new Vector2(256, 0);
         }
-        else if (player.transform.position.x >= 1472)
+        else if (player.transform.position.x >= 1024)
         {
             isTimerActive = false;
             ShowResult("YOU WIN!");

@@ -1,14 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WinScreen : MonoBehaviour
 {
+    [SerializeField] private string nextLevel;
     public Button nextLevelButton;
     public Button menuButton;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,11 +22,11 @@ public class WinScreen : MonoBehaviour
 
     void NextLevel()
     {
-        // Load the next level scene
+        SceneManager.LoadScene(nextLevel);
     }
 
     void ShowMenu()
     {
-        // Load the main menu scene
+        SceneManager.LoadScene("TitleScreen");
     }
 }

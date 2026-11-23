@@ -443,7 +443,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1120037731054611787
 MonoBehaviour:
@@ -497,6 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1757949b86bf348be384dafa4b43bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  nextLevel: {}
   nextLevelButton: {fileID: 8676234641058183024}
   menuButton: {fileID: 5483039958010296737}
 --- !u!1 &7059083200507994798
